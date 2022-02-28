@@ -19,7 +19,7 @@ public class BusLineServiceImpl implements BusLineService {
 
     @Override
     public List<BusLineDTO> getBusLinesByName(String name) throws JsonProcessingException {
-        var busLinesByName = dataPoaClient.getBusLinesByParams("nc", name, "o");
-        return List.of(objectMapper.readValue(busLinesByName, BusLineDTO[].class));
+        var busLines = dataPoaClient.getBusLinesByParams("nc", name, "o");
+        return List.of(objectMapper.readValue(busLines, BusLineDTO[].class));
     }
 }

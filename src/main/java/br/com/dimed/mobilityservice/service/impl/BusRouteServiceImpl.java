@@ -19,6 +19,5 @@ public class BusRouteServiceImpl implements BusRouteService {
     public BusRouteDTO getBusRouteById(String id) throws JsonProcessingException {
         var busRoute = dataPoaClient.getBusRoutesById("il", id);
         return objectMapper.readValue(busRoute, BusRouteDTO.class);
-
     }
 }
