@@ -16,9 +16,15 @@ public interface DataPoaClient {
 
     @GetMapping
     String getBusLinesByParams(
-            @RequestParam("a") String id,
+            @RequestParam("a") String action,
             @RequestParam("p") String name,
             @RequestParam("t") String type)
             throws JsonProcessingException;
+
+    @GetMapping
+        //"?a=il&p=5566"
+    String getBusRoutesById(
+            @RequestParam("a") String action,
+            @RequestParam("p") String idBus);
 
 }
