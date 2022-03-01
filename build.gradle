@@ -18,6 +18,10 @@ repositories {
 	mavenCentral()
 }
 
+bootJar {
+	archiveFileName = "mobility-service.jar"
+}
+
 ext {
 	set('springCloudVersion', "2021.0.1")
 }
