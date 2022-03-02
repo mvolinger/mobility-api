@@ -21,6 +21,8 @@ REST API to manage urban mobility
 - Lombok
 - Swagger
 - Docker
+- JUnit 5
+- Mockito
 
 ## :information_source: How to use it
 
